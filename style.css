@@ -1,0 +1,140 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+/* Contenedor principal dividido */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Columnas */
+.left-column {
+    flex: 1;
+    min-width: 300px;
+}
+.right-column {
+    flex: 2;
+    min-width: 400px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #dce6f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #a0c4f1;
+}
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #1c3d5a;
+}
+header h2 {
+    font-size: 1.3rem;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #1c3d5a;
+}
+header p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* Secciones */
+.left-column section, .right-column section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+}
+section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #1c3d5a;
+    text-align: center;
+}
+
+/* Experiencia */
+.experiencia-card {
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #f7f9fc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.experiencia-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #1c3d5a;
+}
+.experiencia-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Educación y habilidades */
+#educacion p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+/* Habilidades */
+#habilidades h3 {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #1c3d5a;
+}
+
+.skill {
+    margin-bottom: 12px;
+}
+.skill span {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 4px;
+}
+.skill-bar {
+    background-color: #e1e8ef;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 12px;
+}
+.skill-bar div {
+    height: 100%;
+    background-color: #1c3d5a;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+}
